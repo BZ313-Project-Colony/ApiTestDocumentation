@@ -91,4 +91,25 @@ This documentation provides information on the API endpoints for the QRPass proj
 - **Auth:** `Bearer Token`
 - **Description:** This endpoint is used to get all tickets of a specific event.
 
+### Confirm Ticket
+
+- **Endpoint:** `{{BASE_URL}}/tickets/confirm`
+- **Method:** `POST`
+- **Auth:** `Bearer Token`
+- - **Body:** 
+```json
+{
+    "eventId": 2,
+    "email": "ahmetfarukcuha@gmail.com"
+}
+```
+- **Description:** This endpoint is used to confirm ticket.
+
+### Disable Ticket
+
+- **Endpoint:** `{{BASE_URL}}/tickets/{ticket_id}/disable`
+- **Method:** `POST`
+- **Auth:** `Bearer Token`
+- **Description:** This endpoint is used to disable ticket.
+
 Please replace `{{BASE_URL}}` with the base URL of the API.
